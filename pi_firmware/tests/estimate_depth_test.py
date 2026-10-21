@@ -8,6 +8,10 @@ convert sensor readings into water depth measurements
 @Version: 1.0
 """
 
+#Standard library
+import sys, os
+#Add source directory to sys.path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../src"))
 #Local module
 from estimate_depth import estimate_depth
 
