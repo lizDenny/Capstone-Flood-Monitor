@@ -13,7 +13,7 @@ import sys, os
 #Add source directory to sys.path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../src"))
 #Local module
-from estimate_depth import estimate_depth
+from poll_sensors.estimate_depth import estimate_depth
 
 def test_estimate_flood_depth():
     average, error = estimate_depth(102.82, 5.025)

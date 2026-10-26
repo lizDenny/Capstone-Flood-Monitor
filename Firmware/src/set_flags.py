@@ -8,22 +8,22 @@ ToDo: Use check_similarity to determine the obstruction flag during flood mode o
 """
 
 #Local modules
-import const
+from const import THRESHOLD_DEPTH, FLOOD_INTERVAL, FLOOD_EXECUTION_TIME, NORMAL_INTERVAL, NORMAL_EXECUTION_TIME
 
 def set_flags(depth, current_photo, previous_photo):    
     #Flood mode operation
-    if depth >= const.THRESHOLD_DEPTH:
+    if depth >= THRESHOLD_DEPTH:
         #Condition already checked during if statement
         flood_flag = True
         #Set ostruction alert if similarities found in the photos taken both in the current interval and previous interval
         obstruction_flag = True #check_similarity(current_photo, previous_photo)
-        wakeup_interval = (const.FLOOD_INTERVAL*60)-const.FLOOD_EXECUTION_TIME #seconds
+        wakeup_interval = (FLOOD_INTERVAL*60)-FLOOD_EXECUTION_TIME #seconds
     #Non-Flood mode operation
     else:
         #Condition already checked during if statement
         flood_flag = False
         #Don't check for obstructions during normal operation to save power
         obstruction_flag = False
-        wakeup_interval = (const.NORMAL_INTERVAL*60)-const.NORMAL_EXECUTION_TIME #seconds
+        wakeup_interval = (NORMAL_INTERVAL*60)-NORMAL_EXECUTION_TIME #seconds
         
     return flood_flag, obstruction_flag, wakeup_interval

@@ -8,14 +8,14 @@
 """
 
 #Local modules
-import const
+from const import ATM_PRESSURE, WATER_DENSISTY, GRAVITY_ACCEL, SENSOR_HEIGHT, METERS_TO_INCHES
 
 def estimate_depth(pressure, ultrasonic):
     #Calculate depth estimate from pressure reading
-    pressure_depth = 1000 * (pressure - const.ATM_PRESSURE) / (const.WATER_DENSISTY * const.GRAVITY_ACCEL)
+    pressure_depth = 1000 * (pressure - ATM_PRESSURE) / (WATER_DENSISTY * GRAVITY_ACCEL)
     
     #Calculate depth estimate from ultrasonic returns
-    ultrasonic_depth = const.SENSOR_HEIGHT - ultrasonic
+    ultrasonic_depth = SENSOR_HEIGHT - ultrasonic
     
     #Average both depth estimates to obtain final depth estimate
     average_depth = (pressure_depth + ultrasonic_depth) / 2
@@ -24,7 +24,7 @@ def estimate_depth(pressure, ultrasonic):
     error = abs(average_depth - pressure_depth)
     
     #Convert final average and error to inches
-    average_depth *= const.METERS_TO_INCHES
-    error *= const.METERS_TO_INCHES
+    average_depth *= METERS_TO_INCHES
+    error *= METERS_TO_INCHES
 
     return average_depth, error
