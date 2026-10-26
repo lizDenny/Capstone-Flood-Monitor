@@ -17,3 +17,19 @@ Power system:
 6. Buck converter voltage stability
     Process: Connect to battery, measure voltages across 5V and 12V rails while sensors activated
     Success: Voltage remains in a range of +/- 0.2 V of desired
+
+
+Environmental:
+1. Outdoor sun exposure test
+    Process: Place enclosure outside in shade all day, measure temperature inside
+    Success: Temperature does not exceed the lowest high temperature for any component
+2. Water resistance test
+    Process: Leave enclosure outside in rain, inspect for moisture
+    Success: Enclosure not moist inside
+
+
+Sensors:
+1. Sensor power draw test
+    Process: Measure current through all sensors while operating
+2. Sensor startup time
+3. 
