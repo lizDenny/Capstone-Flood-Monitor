@@ -9,10 +9,12 @@ Polling Sensors + Flag Sets
      Test: Give picture with or without obstruction
      Success : The expect output is given
  4. Combinations
-     Test: 
+     Test:
+    
 Cloud Sync
     Test: Give data to upload from all sensors
     Success: When cloud is checked data appears as it was uploaded
+    
 Archive Data
     Test: Give data from all sensors
     Success: When the SD car is checked data appears in correct format
