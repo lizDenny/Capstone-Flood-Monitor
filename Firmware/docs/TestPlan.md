@@ -12,12 +12,10 @@ Polling Sensors + Flag Sets
      Test:
     
 Cloud Sync
-
     Test: Give data to upload from all sensors
     Success: When cloud is checked data appears as it was uploaded
     
 Archive Data
-
     Test: Give data from all sensors
     Success: When the SD car is checked data appears in correct format
     
