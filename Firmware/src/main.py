@@ -4,6 +4,7 @@
 Created on Tue Oct 20 12:36:18 2026
 MIT License
 """
+# Local modules
 import poll_sensors
 #import estimate_depth
 #import set_flags
@@ -12,7 +13,8 @@ import poll_sensors
 #Poll witty pi via gpio for current time
 
 #Poll sensors via "poll_sensors.py"
-sensor_data = poll_sensors.read_all()
+[average_depth, depth_error, site_photo, timestamp] = poll_sensors()
+
 #Calculate the depth from sensor data via "estimate_depth.py"
 
 #Set alert flags via "set_flags.py"
