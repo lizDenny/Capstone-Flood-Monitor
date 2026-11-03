@@ -43,7 +43,7 @@ Interfaces with the camera over USB to capture a photo of the site
 * Link: [poll_camera.py](../src/poll_sensors/poll_camera.py)
 ## set_flags
 If the average depth measured is greater than the threshold, sets the flood_flag high and sets the wakeup interval for the shorter flood mode value. Otherwise, sets the flood_flag low and sets the wakeup interval for the normal operation value  
-* Inputs: average
+* Inputs: average depth in inches
 * Outputs: flood flag bool, wakeup interval in minutes
 * Dependencies: N/A  
 * Link: [set_flags.py](../src/set_flags.py)
