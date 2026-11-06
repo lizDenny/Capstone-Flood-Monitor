@@ -5,6 +5,7 @@
 @Brief: Unit tests for estimate_depth.py containing the module used to 
 convert sensor readings into water depth measurements
 @Copyright: 2026 MIT License
+@Author Rebecca Means
 @Version: 1.0
 """
 
