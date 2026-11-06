@@ -1,0 +1,34 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "1011ba7b-97c1-457c-9fd5-280956addd78")
+	(paper "A4")
+	(lib_symbols)
+	(text "Flood Monitor Wiring Diagram"
+		(exclude_from_sim no)
+		(at 200.406 189.738 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "68d80fe7-677a-47f9-8b4a-52a2e2d15aa2")
+	)
+	(text "11/06/2026"
+		(exclude_from_sim no)
+		(at 212.344 193.548 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a7b036d6-1213-4c30-a021-5210a012fd5a")
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
