@@ -5,7 +5,13 @@ Created on Tue Oct 20 12:36:18 2026
 MIT License
 """
 #Local modules
-import rtc_sync, poll_sensors, set_flags, archive_data, cloud_sync, negotiate_wakeup, shutdown
+from rtc_sync import rtc_sync
+from poll_sensors import poll_sensors
+from set_flags import set_flags
+from archive_data import archive_data
+from cloud_sync import cloud_sync
+from negotiate_wakeup import negotiate_wakeup
+from shutdown import shutdown
 
 #Poll witty pi for current time via "rtc_sync"
 rtc_sync()
